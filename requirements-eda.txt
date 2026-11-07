@@ -1,0 +1,4 @@
+-r requirements.txt
+# Solo para ejecutar y revisar notebooks; no requerido por la aplicación.
+nbclient>=0.10,<0.11
+ipykernel>=6.29,<8

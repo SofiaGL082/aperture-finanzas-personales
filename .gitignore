@@ -227,3 +227,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# FinTwin: información derivada y bases auxiliares
+data/processed/
+*.sqlite3
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm

@@ -1,0 +1,10 @@
+[project]
+name = "fintwin"
+version = "0.1.0"
+description = "FinTwin AI: registro de ingresos y gastos, reportes mensuales y metas de ahorro"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+

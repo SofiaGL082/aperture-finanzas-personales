@@ -1,0 +1,60 @@
+{
+  "generated_utc": "2026-11-07T02:01:32.882501+00:00",
+  "datasets": [
+    {
+      "dataset_id": "personal_finance",
+      "source_file": "personal_transactions_dashboard_ready.xlsx",
+      "source_sha256": "a4c5ad85078aef4b8ce5badbf75e10e8f43c10a259dd3f44d3c19f537efd6985",
+      "rows": 806,
+      "conversion_status": {
+        "unidentified_currency": 806
+      },
+      "review_rows": 806,
+      "converted_cop_minor_all_movement_types": null,
+      "distinct_rates_used": 0,
+      "output_file": "data\\processed\\eda_20261107T020132123782Z\\personal_finance_preparado.csv",
+      "output_sha256": "359e058e9b33b4a19310878897af895b12eca26c67b138f977cd6988240b1172"
+    },
+    {
+      "dataset_id": "my_expenses",
+      "source_file": "expense_data_1.csv",
+      "source_sha256": "b7e5cc0bca39f51fe6de8ae64a95edd78e71bdecb88952860385b10ea092e090",
+      "rows": 277,
+      "conversion_status": {
+        "converted": 277
+      },
+      "review_rows": 78,
+      "converted_cop_minor_all_movement_types": 604596496,
+      "distinct_rates_used": 86,
+      "output_file": "data\\processed\\eda_20261107T020132123782Z\\my_expenses_preparado.csv",
+      "output_sha256": "c34416347276f1342fb74d382cec4a99ee819c3a9a185b15a116625ef37ad0c2"
+    }
+  ],
+  "staging_sqlite": "data\\processed\\eda_20261107T020132123782Z\\preparacion.sqlite",
+  "sqlite_rows": 1083,
+  "fx_provenance": {
+    "INR": {
+      "url": "https://api.frankfurter.dev/v2/rates?from=2021-11-14&to=2022-03-02&base=INR&quotes=COP&expand=providers",
+      "retrieved_at": "2026-11-07T01:57:00.429131+00:00",
+      "response_sha256": "e4cfe9e8494f7b5c7cfcd1946bcbbdeecbdfea831070960b11942fcb4df8ea6f",
+      "source": "Frankfurter v2: referencia blended, no tasa bancaria ni TRM certificada"
+    },
+    "USD": {
+      "url": "https://api.frankfurter.dev/v2/rates?from=2021-12-01&to=2021-12-08&base=USD&quotes=COP&expand=providers",
+      "retrieved_at": "2026-11-07T01:57:01.924168+00:00",
+      "response_sha256": "568713489aa985f40dd3701aea51be5f9dbfa67dbc0d3a990e7d67525505bdd7",
+      "source": "Frankfurter v2: referencia blended, no tasa bancaria ni TRM certificada"
+    }
+  },
+  "fetch_errors": [],
+  "rules": [
+    "Una fila de salida por fila original; sin borrados ni imputaciones.",
+    "Fechas originales para FX. demo_date queda vacío en preparación.",
+    "Moneda del Excel no verificada: COP nulo, no se asume USD.",
+    "Tasa de la fecha o última anterior hasta siete días. Nunca tasa futura.",
+    "Redondeo HALF_UP una vez a centavos COP mediante Decimal.",
+    "Perfiles separados; los tipos ambiguos requieren revisión.",
+    "Staging separado: no se carga en la base operativa."
+  ],
+  "totals_note": "La suma de todos los tipos no representa gasto, ingreso ni ahorro; sirve solo para conciliación de importes."
+}

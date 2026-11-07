@@ -1,0 +1,6 @@
+,transactions,days_with_records,expense_minor,inflow_minor,recorded_cashflow_minor,inside_date_bounds
+2021-11,35,10,362040,400300,38260,False
+2021-12,89,25,1633444,1231000,-402444,True
+2022-01,92,27,2067951,1964100,-103851,True
+2022-02,54,23,1786465,1820000,33535,True
+2022-03,7,2,52500,60000,7500,False

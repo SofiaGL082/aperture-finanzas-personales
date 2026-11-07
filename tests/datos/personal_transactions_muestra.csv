@@ -1,0 +1,11 @@
+Date,Description,Amount,Transaction Type,Category,Account Name,Month
+2019-11-01,Biweekly Paycheck,2000.00,credit,Paycheck,Checking,2019-11
+2019-11-02,Rent,1500.00,debit,Mortgage & Rent,Checking,2019-11
+2019-11-05,Grocery Store,85.40,debit,Groceries,Visa Credit Card,2019-11
+2019-11-08,Netflix,13.99,debit,Television,Visa Credit Card,2019-11
+2019-11-15,Credit Card Payment,99.39,debit,Credit Card Payment,Checking,2019-11
+2019-11-15,Credit Card Payment,99.39,credit,Credit Card Payment,Visa Credit Card,2019-11
+2019-11-20,Amazon,40.00,credit,Shopping,Visa Credit Card,2019-11
+2019-12-31,Hardware Store,120.00,debit,Home Improvement,Visa Credit Card,2019-12
+2019-12-31,Mystery,10.00,debit,Weird Category,Checking,2019-12
+,Sin fecha,5.00,debit,Groceries,Checking,
